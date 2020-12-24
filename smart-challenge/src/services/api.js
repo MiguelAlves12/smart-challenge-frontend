@@ -1,6 +1,6 @@
 const axios = require("axios");
 const api = axios.create({
-    baseURL: 'https://smart-challenge-backend.herokuapp.com/'
+    baseURL: process.env.VUE_APP_API_URL
 });
 
 module.exports = api;
